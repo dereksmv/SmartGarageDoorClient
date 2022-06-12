@@ -1,0 +1,10 @@
+<div class="wrapper" *ngIf="!loading">
+    <div [ngClass]="status">
+        <h1 class="status-header">{{ status }}</h1>
+        <hr>
+    </div>
+    <button (click)="toggleGarageDoorState()">{{ getActionButtonText() }}</button>
+</div>
+<div *ngIf="loading">
+    <app-loader></app-loader>
+</div>

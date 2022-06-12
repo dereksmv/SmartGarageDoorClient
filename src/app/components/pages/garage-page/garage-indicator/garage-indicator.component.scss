@@ -1,0 +1,35 @@
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    .Closed {
+        h1 {
+            color: #1B34A6;
+            text-transform: uppercase;
+        }    
+    }
+    .Open {
+        h1 {
+            color: #A8302C;
+            text-transform: uppercase;
+        }
+    }
+    .NeitherOpenOrClosed {
+        h1 {
+            color: #78AB29;
+            text-transform: uppercase;
+        }
+    }
+
+    button {
+        width: 100%;
+        margin-top: 25px;
+        text-transform: uppercase;
+        padding: 10px;
+        border: 1px #93F20F solid;
+        background-color: #93F20F;
+        border-radius: 25px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

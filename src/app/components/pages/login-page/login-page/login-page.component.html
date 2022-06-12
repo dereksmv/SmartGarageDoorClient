@@ -1,0 +1,20 @@
+<div class="wrapper">
+    <form [formGroup]="loginFormGroup" (ngSubmit)="onSubmit()" class="login-form" *ngIf="!loading">
+        <div class="login-form-control">
+            <label for="username">
+                Username: 
+            </label>
+            <input type="text" formControlName="UserNameControl">
+        </div>
+        <div class="login-form-control">
+            <label for="password">
+                Password: 
+            </label>
+            <input type="password" formControlName="PasswordControl">
+        </div>
+        <input type="submit" class="button">
+    </form>
+    <div *ngIf="loading">
+        <app-loader></app-loader>
+    </div>
+</div>
